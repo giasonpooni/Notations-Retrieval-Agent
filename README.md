@@ -57,4 +57,8 @@ Contributor requirements: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+The current code remains **MIT**. See [LICENSE](LICENSE) and the preserved
+[LICENSE-MIT](LICENSE-MIT). A policy-only proposal for future proprietary production
+work is recorded in [LICENSE-POLICY.md](LICENSE-POLICY.md), pending ownership and
+counsel review. No new restrictive terms or repository visibility change are in force,
+and prior MIT grants remain valid.
