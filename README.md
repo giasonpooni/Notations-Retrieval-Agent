@@ -4,11 +4,25 @@
 
 [Run](#install-and-run) · [Kernel boundary](docs/KERNEL.md) · [Research profile](#research-profile) · [Scope](docs/SCOPE.md)
 
-## Notation Systems
+## Organization
+
+**Notation Systems Inc** is the parent organization: a scientific computing and systems engineering company developing computational instruments, software and interactive environments for understanding and building physical and virtual systems.
+
+The company's development direction connects measurement, state estimation and sensor fusion, scientific modelling, simulation and execution, from materials and machines to interactive worlds.
+
+| Division | Focus |
+| --- | --- |
+| **Notations Gaming** | Games, graphics, world building, interactive environments and gameplay simulation. |
+| **Notations Manufacturing** | Design, machinery integration, process development, fabrication and production systems. |
+| **Notations Laboratories** | Research and experimental validation in scientific computing, measurement, physics and chemistry modelling, materials and simulation. |
+
+**Repository role:** System Graph is shared **Notation Systems Inc** tooling for authored typed graphs, connected subgraph retrieval and declared numerical call eligibility. It helps organize models and computational investigations across the divisions while NET retains session control and each application retains its own scientific or interactive state authority.
+
+## Instrument role
 
 **Frontier Tooling and Instrumentation for Digital Futures.** We develop computational instruments and operational tooling connecting scientific methods, specialized computation and human expertise.
 
-[Notations Systems Terminal](https://github.com/giasonpooni/Notations-Systems-Terminal) composes supported investigations. This provider retains its typed graph, retrieval and eligibility implementation. ESM retains governed evidence; Cartesian Graphics develops interactive worlds, simulation technology and digital IP with separate creative state and approval. [Organization profile](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/PUBLIC_POSITIONING.md).
+[Notations Systems Terminal](https://github.com/atomtrapping/Notations-Systems-Terminal) composes supported investigations. This provider retains its typed graph, retrieval and eligibility implementation. ESM retains governed evidence; Notations Gaming develops interactive worlds, simulation technology and digital IP with separate creative state and approval. [Current organization](#organization).
 
 ## Identity and scope
 
@@ -23,7 +37,7 @@
 
 This is a function-graph plus factor-graph representation for observer setup on declared nonlinear plants. OpenUSD is a projection. It is not schematic-image OCR, a general twin platform or a Blender/Godot editor plugin. Modules do not import JSPT, PLSR, RCI or CSE at load time.
 
-[Notations Inference Schematics Engine](https://github.com/giasonpooni/Notations-Inference-Schematics-Engine) is a separate project, not a silent rename or replacement of SRA. Integration must preserve existing records, pins and eligibility semantics.
+[Notations Inference Schematics Engine](https://github.com/atomtrapping/Notations-Inference-Schematics-Engine) is a separate project, not a silent rename or replacement of SRA. Integration must preserve existing records, pins and eligibility semantics.
 
 ## Routing and projections
 
@@ -49,7 +63,7 @@ The question is: **which subgraphs may call which kernel, and what remains unres
 Python 3.12/3.13:
 
 ```sh
-git clone https://github.com/giasonpooni/Notations-Retrieval-Agent.git
+git clone https://github.com/atomtrapping/Notations-Retrieval-Agent.git
 cd Notations-Retrieval-Agent
 uv run --python 3.13 python examples/quickstart.py
 uv run --python 3.13 python examples/unknown_plant.py
@@ -84,7 +98,7 @@ Dependent numerical routes require a current content-bound Jacobian adapter reco
 
 Evaluate retained uncertainty, refusal reasons, dependency closure and actual downstream outcomes—not only subgraph size. Retrieval must not drop external coupling or convert an annotation into physical truth. Proposed automation and information-efficient context need held-out comparisons and total cost measurements.
 
-[Research protocol](https://github.com/giasonpooni/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/RESEARCH_PROGRAMME.md). Python/Julia/Rust/C++ and CUDA providers remain separately qualified implementations, not automatic capabilities of this graph layer.
+[Historical research protocol](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/RESEARCH_PROGRAMME.md). Python/Julia/Rust/C++ and CUDA providers remain separately qualified implementations, not automatic capabilities of this graph layer.
 
 ## Documentation and compatibility
 

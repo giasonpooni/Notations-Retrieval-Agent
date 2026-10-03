@@ -1,7 +1,7 @@
 # Schematics Retrieval Agent in the instrumentation stack
 
 Notation Systems develops computational instrumentation and evidence infrastructure for industrial and cyber-physical systems.
-This component owns **typed schematic retrieval and kernel eligibility**. The [stack map](https://github.com/giasonpooni/Computational-Instrumentation-Workbench/blob/main/docs/STACK.md) locates all public components and distinguishes implemented paths from specifications and scaffolds.
+This component owns **typed schematic retrieval and kernel eligibility**. The [stack map](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/STACK.md) locates all public components and distinguishes implemented paths from specifications and scaffolds.
 
 ## Current boundary
 
@@ -40,7 +40,7 @@ records, not current results. Binding checks content consistency and declared
 pins; it does not authenticate execution. JSON carries replay records; USDA is a
 display projection, not lossless execution interchange. No CIW adapter is present.
 
-See the [diagram atlas](https://github.com/giasonpooni/Computational-Instrumentation-Workbench/blob/main/docs/DIAGRAMS.md) for the wider system.
+See the [diagram atlas](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/DIAGRAMS.md) for the wider system.
 
 ## Interoperability
 
