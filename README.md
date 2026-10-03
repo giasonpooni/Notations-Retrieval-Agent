@@ -23,7 +23,7 @@ Repository URLs, imports, CLI flags, historical companion pins, contracts and
 licence terms are unchanged. Retained pins below intentionally keep their
 historical repository references rather than being relabelled as new evidence.
 
-Part of **Notation Systems' computational instrumentation and evidence infrastructure** for industrial and cyber-physical systems.
+Part of **Notation Systems Inc's computational instrumentation and evidence infrastructure** for industrial and cyber-physical systems.
 
 [Notations Engineering Terminal (CIW)](https://github.com/giasonpooni/Notations-Engineering-Terminal) · [Diagram atlas](https://github.com/giasonpooni/Notations-Engineering-Terminal/blob/main/docs/DIAGRAMS.md) · [Stack map](https://github.com/giasonpooni/Notations-Engineering-Terminal/blob/main/docs/STACK.md) · [Component role and interfaces](docs/STACK_ROLE.md)
 
@@ -40,6 +40,18 @@ The central question is:
 
 > Given an authored schematic, which subgraphs may call which kernel —
 > and what remains UNRESOLVED?
+
+## Organization
+
+**Notation Systems Inc** is the parent organization.
+
+| Division | Focus |
+| --- | --- |
+| **Notations Gaming** | Games, graphics and interactive worlds. |
+| **Notations Manufacturing** | Industrial design, materials and manufacturing systems. |
+| **Notations Laboratories** | Research, scientific computing, simulation and experimental validation. |
+
+This repository is shared **Notation Systems Inc** tooling for evidence retrieval and system graph projections, supporting workflows across all three divisions.
 
 ## Routing and projections
 
