@@ -25,7 +25,7 @@ historical repository references rather than being relabelled as new evidence.
 
 Part of **Notation Systems Inc's computational instrumentation and evidence infrastructure** for industrial and cyber-physical systems.
 
-[Notations Engineering Terminal (CIW)](https://github.com/giasonpooni/Notations-Engineering-Terminal) · [Diagram atlas](https://github.com/giasonpooni/Notations-Engineering-Terminal/blob/main/docs/DIAGRAMS.md) · [Stack map](https://github.com/giasonpooni/Notations-Engineering-Terminal/blob/main/docs/STACK.md) · [Component role and interfaces](docs/STACK_ROLE.md)
+[Notations Engineering Terminal (CIW)](https://github.com/atomtrapping/Notations-Systems-Terminal) · [Diagram atlas](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/DIAGRAMS.md) · [Stack map](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/STACK.md) · [Component role and interfaces](docs/STACK_ROLE.md)
 
 Function-graph plus factor-graph IR for setting up observers on declared
 nonlinear plants. The agent retrieves typed subgraphs, applies an eligibility
@@ -81,7 +81,7 @@ current kernel result. The projections do not grant operating authority.
 Python 3.12 or 3.13.
 
 ```bash
-git clone https://github.com/giasonpooni/Schematics-Retrieval-Agent.git
+git clone https://github.com/atomtrapping/Notations-Retrieval-Agent.git
 cd Schematics-Retrieval-Agent
 uv run --python 3.13 python examples/quickstart.py
 uv run --python 3.13 python examples/unknown_plant.py

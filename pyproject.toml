@@ -9,13 +9,13 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.optional-dependencies]
-jspt = ["jacobian-sensitivity-propagation-testbed @ git+https://github.com/giasonpooni/Jacobian-Sensitivity-Propagation-Testbed.git@7399ab03087b27683620b4c57f97b2ac14546c7f"]
-plsr = ["parameterized-lyapunov-stability-runtime @ git+https://github.com/giasonpooni/Parameterized-Lyapunov-Stability-Runtime.git@9d0e7b4a1162e038150a71c63d986945d78135d4"]
-rci = ["retrofitted-computational-instrumentation @ git+https://github.com/giasonpooni/Retrofitted-Computational-Instrumentation.git@5c63b1192ff2a25dd3babf1f06f596f70fc8231e"]
+jspt = ["jacobian-sensitivity-propagation-testbed @ git+https://github.com/atomtrapping/Notations-Sensitivity-Testbed.git@7399ab03087b27683620b4c57f97b2ac14546c7f"]
+plsr = ["parameterized-lyapunov-stability-runtime @ git+https://github.com/atomtrapping/Parameterized-Lyapunov-Stability-Runtime.git@9d0e7b4a1162e038150a71c63d986945d78135d4"]
+rci = ["retrofitted-computational-instrumentation @ git+https://github.com/atomtrapping/Notations-Metrology-Adapter.git@5c63b1192ff2a25dd3babf1f06f596f70fc8231e"]
 kernels = [
-    "jacobian-sensitivity-propagation-testbed @ git+https://github.com/giasonpooni/Jacobian-Sensitivity-Propagation-Testbed.git@7399ab03087b27683620b4c57f97b2ac14546c7f",
-    "parameterized-lyapunov-stability-runtime @ git+https://github.com/giasonpooni/Parameterized-Lyapunov-Stability-Runtime.git@9d0e7b4a1162e038150a71c63d986945d78135d4",
-    "retrofitted-computational-instrumentation @ git+https://github.com/giasonpooni/Retrofitted-Computational-Instrumentation.git@5c63b1192ff2a25dd3babf1f06f596f70fc8231e",
+    "jacobian-sensitivity-propagation-testbed @ git+https://github.com/atomtrapping/Notations-Sensitivity-Testbed.git@7399ab03087b27683620b4c57f97b2ac14546c7f",
+    "parameterized-lyapunov-stability-runtime @ git+https://github.com/atomtrapping/Parameterized-Lyapunov-Stability-Runtime.git@9d0e7b4a1162e038150a71c63d986945d78135d4",
+    "retrofitted-computational-instrumentation @ git+https://github.com/atomtrapping/Notations-Metrology-Adapter.git@5c63b1192ff2a25dd3babf1f06f596f70fc8231e",
 ]
 
 [project.scripts]
