@@ -1,45 +1,8 @@
-# System Graph
+# Notations Retrieval Agent
 
-**Inspect typed system graphs, retrieve connected subgraphs and check eligibility for declared numerical calls.**
+**Inspect authored system graphs, retrieve typed subgraphs and check eligibility for explicit numerical calls.**
 
-| NET micro-tool | Identity and scope |
-| --- | --- |
-| User-facing name | **System Graph** |
-| Proposed NET operation family | `system.graph` |
-| Implementation repository | `Schematics-Retrieval-Agent` |
-| Existing provider | Schematics Retrieval Agent / SRA |
-| Existing library and CLI | `schematics`; `sra` |
-| Current boundary | Authored typed function/factor graphs, subgraph retrieval, eligibility checks and explicit companion calls |
-
-`system.graph` is the agreed NET-facing name, **not a newly installed command,
-a schematic-image OCR service or an implemented Blender/Godot node-editor plugin**.
-Use the existing library and CLI below. Graph eligibility is not an executed
-kernel result, and a graph projection is not an authoritative physical model.
-
-NET owns session composition and dispatch; this provider owns typed graph
-representation, retrieval and eligibility annotations. Evidence, operation
-specifications, execution attempts and verification records remain distinct.
-Repository URLs, imports, CLI flags, historical companion pins, contracts and
-licence terms are unchanged. Retained pins below intentionally keep their
-historical repository references rather than being relabelled as new evidence.
-
-Part of **Notation Systems Inc's computational instrumentation and evidence infrastructure** for industrial and cyber-physical systems.
-
-[Notations Engineering Terminal (CIW)](https://github.com/atomtrapping/Notations-Systems-Terminal) · [Diagram atlas](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/DIAGRAMS.md) · [Stack map](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/main/docs/STACK.md) · [Component role and interfaces](docs/STACK_ROLE.md)
-
-Function-graph plus factor-graph IR for setting up observers on declared
-nonlinear plants. The agent retrieves typed subgraphs, applies an eligibility
-table, and writes fail-closed annotations.
-
-Short name **SRA**. The reusable library import is `schematics`.
-
-OpenUSD is a projection. This package is not a twin platform and does not
-import JSPT, PLSR, RCI, or CSE at module load.
-
-The central question is:
-
-> Given an authored schematic, which subgraphs may call which kernel —
-> and what remains UNRESOLVED?
+[Run](#install-and-run) · [Kernel boundary](docs/KERNEL.md) · [Research profile](#research-profile) · [Scope](docs/SCOPE.md)
 
 ## Organization
 
@@ -54,6 +17,27 @@ The company's development direction connects measurement, state estimation and s
 | **Notations Laboratories** | Research and experimental validation in scientific computing, measurement, physics and chemistry modelling, materials and simulation. |
 
 **Repository role:** System Graph is shared **Notation Systems Inc** tooling for authored typed graphs, connected subgraph retrieval and declared numerical call eligibility. It helps organize models and computational investigations across the divisions while NET retains session control and each application retains its own scientific or interactive state authority.
+
+## Instrument role
+
+**Frontier Tooling and Instrumentation for Digital Futures.** We develop computational instruments and operational tooling connecting scientific methods, specialized computation and human expertise.
+
+[Notations Systems Terminal](https://github.com/atomtrapping/Notations-Systems-Terminal) composes supported investigations. This provider retains its typed graph, retrieval and eligibility implementation. ESM retains governed evidence; Notations Gaming develops interactive worlds, simulation technology and digital IP with separate creative state and approval. [Current organization](#organization).
+
+## Identity and scope
+
+| Identity | Value |
+| --- | --- |
+| Capability | **System Graph** |
+| Current repository | `Notations-Retrieval-Agent` |
+| Existing provider | Schematics Retrieval Agent / SRA |
+| Library / CLI | `schematics` / `sra` |
+| Proposed NET family | `system.graph` |
+| Implemented boundary | Authored typed function/factor graphs, retrieval, eligibility annotations and explicit companion calls |
+
+This is a function-graph plus factor-graph representation for observer setup on declared nonlinear plants. OpenUSD is a projection. It is not schematic-image OCR, a general twin platform or a Blender/Godot editor plugin. Modules do not import JSPT, PLSR, RCI or CSE at load time.
+
+[Notations Inference Schematics Engine](https://github.com/atomtrapping/Notations-Inference-Schematics-Engine) is a separate project, not a silent rename or replacement of SRA. Integration must preserve existing records, pins and eligibility semantics.
 
 ## Routing and projections
 
@@ -72,17 +56,15 @@ flowchart TD
   J --> P["Mermaid and USDA projections"]
 ```
 
-Eligibility concerns a declared numerical call. Unknown plants remain
-`UNRESOLVED`; neither a fixture matrix nor a rendered edge establishes a
-current kernel result. The projections do not grant operating authority.
+The question is: **which subgraphs may call which kernel, and what remains unresolved?** Eligibility is not a completed numerical call. Unknown plants remain `UNRESOLVED`; fixture matrices and rendered edges do not establish a current result. Projections grant no operating authority.
 
 ## Install and run
 
-Python 3.12 or 3.13.
+Python 3.12/3.13:
 
-```bash
+```sh
 git clone https://github.com/atomtrapping/Notations-Retrieval-Agent.git
-cd Schematics-Retrieval-Agent
+cd Notations-Retrieval-Agent
 uv run --python 3.13 python examples/quickstart.py
 uv run --python 3.13 python examples/unknown_plant.py
 uv run --python 3.13 --with pytest pytest -q
@@ -90,38 +72,40 @@ uv run --python 3.13 --with pytest pytest -q
 
 CLI:
 
-```bash
+```sh
 uv run --python 3.13 sra --fixture-A -o results
 uv run --python 3.13 --extra jspt sra --call-jspt -o results
 uv run --python 3.13 sra --rci-digest rci-displacement-digest-fixture -o results
 ```
 
-`--extra jspt` installs the pinned `sensitivity` package into the same environment
-that runs `--call-jspt`. Without that extra, an unavailable kernel returns
-`NOT_CHECKED`. A fixture A does not open PLSR.
+`--extra jspt` installs the pinned `sensitivity` package into the calling environment. Without it, an unavailable kernel returns `NOT_CHECKED`. Fixture A does not open PLSR.
 
-To exercise all pinned companion adapters, including the JSPT-to-PLSR path:
+For all pinned companion adapters, including JSPT-to-PLSR:
 
-```bash
+```sh
 uv run --python 3.13 --dev --extra kernels pytest -q -m live
 ```
 
-Explicit live tests require their dependencies and fail if one is absent. The
-default suite excludes live tests; its missing-dependency cases simulate that
-condition even when extras are installed.
+Explicit live tests require dependencies and fail when absent. The default suite excludes live tests; missing-dependency cases simulate absence even when extras are installed.
 
-Pin: `giasonpooni/Jacobian-Sensitivity-Propagation-Testbed@7399ab03087b27683620b4c57f97b2ac14546c7f`.
+Historical pin retained: `giasonpooni/Jacobian-Sensitivity-Propagation-Testbed@7399ab03087b27683620b4c57f97b2ac14546c7f`.
 
-Dependent numerical routes require a current, content-bound Jacobian adapter
-record. Legacy annotations remain readable, but stale or unbound matrices do not
-open covariance, structure or Lyapunov calls. Content binding is not execution
-authentication; see the precise boundary in [docs/KERNEL.md](docs/KERNEL.md).
+Dependent numerical routes require a current content-bound Jacobian adapter record. Legacy annotations remain readable, but stale/unbound matrices do not enable covariance, structure or Lyapunov calls. Binding is not execution authentication. See [kernel contract](docs/KERNEL.md).
 
-See [docs/KERNEL.md](docs/KERNEL.md), [docs/SCOPE.md](docs/SCOPE.md),
-and [docs/MAP.md](docs/MAP.md).
+## Research profile
 
-Contributor requirements: [CONTRIBUTING.md](CONTRIBUTING.md).
+**Question:** what graph structure and numerical evidence must be present before a composed operation is eligible? Use authored known/unknown plants and available/unavailable companion cases as bounded specimens.
+
+Evaluate retained uncertainty, refusal reasons, dependency closure and actual downstream outcomes—not only subgraph size. Retrieval must not drop external coupling or convert an annotation into physical truth. Proposed automation and information-efficient context need held-out comparisons and total cost measurements.
+
+[Historical research protocol](https://github.com/atomtrapping/Notations-Systems-Terminal/blob/b41b84922d4963a9206202029afd1e78b9451f9c/RESEARCH_PROGRAMME.md). Python/Julia/Rust/C++ and CUDA providers remain separately qualified implementations, not automatic capabilities of this graph layer.
+
+## Documentation and compatibility
+
+[Kernel](docs/KERNEL.md) · [Scope](docs/SCOPE.md) · [Map](docs/MAP.md) · [Stack role](docs/STACK_ROLE.md) · [Contributing](CONTRIBUTING.md)
+
+Existing `schematics`, `sra`, NET / `net` / `ciw`, flags, source pins, schema and evidence/specification/execution/verification identities remain. `system.graph` is not newly registered by this text. No source, tests, dependencies, licence, permissions, deployment or release changes; no new runtime qualification is claimed.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+[MIT](LICENSE). Existing source and third-party notices remain in force. Public-interest and private-IP positioning does not transfer rights or establish nonprofit status.
