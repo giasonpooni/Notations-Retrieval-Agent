@@ -65,17 +65,19 @@ Python 3.12/3.13:
 ```sh
 git clone https://github.com/atomtrapping/Notations-Retrieval-Agent.git
 cd Notations-Retrieval-Agent
-uv run --python 3.13 python examples/quickstart.py
-uv run --python 3.13 python examples/unknown_plant.py
-uv run --python 3.13 --with pytest pytest -q
+uv venv --python 3.13
+uv pip install . --group dev
+uv run --no-project --python 3.13 python examples/quickstart.py
+uv run --no-project --python 3.13 python examples/unknown_plant.py
+uv run --no-project --python 3.13 python -m pytest -q
 ```
 
 CLI:
 
 ```sh
-uv run --python 3.13 sra --fixture-A -o results
+uv run --no-project --python 3.13 sra --fixture-A -o results
 uv run --python 3.13 --extra jspt sra --call-jspt -o results
-uv run --python 3.13 sra --rci-digest rci-displacement-digest-fixture -o results
+uv run --no-project --python 3.13 sra --rci-digest rci-displacement-digest-fixture -o results
 ```
 
 `--extra jspt` installs the pinned `sensitivity` package into the calling environment. Without it, an unavailable kernel returns `NOT_CHECKED`. Fixture A does not open PLSR.
@@ -87,6 +89,8 @@ uv run --python 3.13 --dev --extra kernels pytest -q -m live
 ```
 
 Explicit live tests require dependencies and fail when absent. The default suite excludes live tests; missing-dependency cases simulate absence even when extras are installed.
+
+CI runs the complete default suite in a public-core environment installed with `uv pip install . --group dev`, without resolving optional companion repositories. The separate pinned-kernels job still runs every live integration test and requires read access to all declared companion repositories, including the private Lyapunov runtime. A passing public-core job does not qualify the live kernel path.
 
 Historical pin retained: `giasonpooni/Jacobian-Sensitivity-Propagation-Testbed@7399ab03087b27683620b4c57f97b2ac14546c7f`.
 

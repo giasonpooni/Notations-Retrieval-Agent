@@ -27,14 +27,19 @@ jobs:
       - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e
         with:
           version: "0.10.10"
+      # The public core has no runtime dependencies. Install its declared dev
+      # group directly so uv does not resolve optional private kernel extras.
+      # The separate kernels job retains the complete pinned integration gate.
+      - name: Install public core and declared development dependencies
+        run: uv pip install --system --python ${{ matrix.python }} . --group dev
       - name: Run quickstart
-        run: uv run --python ${{ matrix.python }} python examples/quickstart.py
+        run: python examples/quickstart.py
       - name: Run unknown-plant example
-        run: uv run --python ${{ matrix.python }} python examples/unknown_plant.py
+        run: python examples/unknown_plant.py
       - name: Build package
         run: uv build --python ${{ matrix.python }}
       - name: Run default suite
-        run: uv run --python ${{ matrix.python }} --dev pytest -q
+        run: python -m pytest -q
 
   kernels:
     name: pinned kernels
